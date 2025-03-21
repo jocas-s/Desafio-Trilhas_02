@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    background-color: #2135A6;
+    display: flex;
+    height: 100vh;
+}
+
+.form-container {
+    width: 41%;
+    background: #FFFFFF;
+    padding: 5%;
+    overflow-y: auto;
+
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: #57534E;
+}
+
+.titulo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #292524;
+    margin-top: 24px;
+}
+
+.paragrafo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #57534E;
+    margin-top: 8px;
+}
+
+.inscricaoForm {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.subtitulo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #292524;
+    margin-top: 48px;
+}
+
+.texto {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #57534E;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.resposta {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #292524;
+    margin-top: 4px;
+    padding: 0 16px;
+    border-radius: 8px;
+    border: 1px solid #D6D3D1;
+    height: 48px;
+    transition: border-color 0.3s ease;
+}
+
+.select {
+    background: url('/assets/arrow-down-01.png') 98% 60% no-repeat;
+}
+
+select {
+    appearance: none;
+    background: none;
+    width: 100%;
+}
+
+.upload-box {
+    border: 4px dashed #D6D3D1;
+    margin-top: 4px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #A8A29E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 31%;
+    gap: 8px;
+}
+
+.upload {
+    display: none;
+}
+
+.endereco-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.endereco {
+    display: flex;
+    flex-direction: column;
+}
+
+.resposta-1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #292524;
+    margin-top: 4px;
+    padding: 0 16px;
+    border-radius: 8px;
+    border: 1px solid #D6D3D1;
+    width: 332px;
+    height: 48px;
+}
+
+.resposta-2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #292524;
+    margin-top: 4px;
+    padding: 0 16px;
+    border-radius: 8px;
+    border: 1px solid #D6D3D1;
+    width: 176px;
+    height: 48px;
+}
+
+.trilhas-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.trilhas {
+    border: 1px solid #D6D3D1;
+    border-radius: 8px;
+    width: 48%;
+    height: 120px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #000000;
+    
+}
+
+.trilhas input[type="radio"]:checked {
+    border-color: #F3541C;
+
+}
+
+
+span {
+    margin-left: 8px;
+}
+
+.radio {
+    margin: 8px 0 0 8px;
+}
+
+.trilhas-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.checkbox-container {
+    display: flex;
+    align-items: first baseline;
+
+}
+
+.checkbox {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16;
+    color: #57534E;
+    margin-top: 48px;
+    margin-left: 12px;
+    
+}
+
+.strong-checkbox {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16;
+    color: #E43A12;
+}
+
+.button-container {
+    display: flex;
+    margin-top: 64px;
+    justify-content: space-between;
+    padding-left: 47%;
+}
+
+.button-cancelar {
+    border: 2px solid #E43A12;
+    border-radius: 8px;
+    width: 123px;
+    height: 48px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16;
+    color: #E43A12;
+}
+
+.button-inscricao {
+    border: 2px solid #E43A12;
+    background-color: #E43A12;
+    border-radius: 8px;
+    width: 169px;
+    height: 48px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16;
+    color: #FFFFFF;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+    background-size: cover;
+} 
+
+.ilustracao {
+    width: 90%;
+}
+
+.logo-trilhas {
+    width: 212px;
+}

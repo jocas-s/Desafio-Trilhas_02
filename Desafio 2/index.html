@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+
+            <a href="index.html" class="back"><img src="/assets/arrow-left-02.png" alt="Voltar">Voltar</a>
+        
+            <h1 class="titulo">Formulário de inscrição</h1>
+            <p class="paragrafo">Preencha os dados abaixo para fazer sua inscrição no Programa Trilhas.</p>
+
+            <form class="inscricaoForm">       
+            
+                <h2 class="subtitulo">Informações do participante</h2>
+
+                    <label class="texto" for="nome">Nome completo</label>
+                    <input class="resposta" type="text" id="nome" required>
+                
+                    <label class="texto" for="dataNascimento">Data de nascimento</label>
+                    <input class="resposta" type="date" id="dataNascimento" required>
+                
+                    <label class="texto" for="cpf">CPF</label>
+                    <input class="resposta" type="text" id="cpf" required>
+                
+                    <label class="texto" for="sexo">Sexo</label>
+                    <div class="select">
+                        <select class="resposta" id="sexo" required >
+                            <option value="">Selecione</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="masculino">Masculino</option>
+                        </select>
+                    </div>
+                
+                    <label class="texto" for="email">E-mail</label>
+                    <input class="resposta" type="email" id="email" required>
+                
+                    <label class="texto" for="telefone">Telefone</label>
+                    <input class="resposta" type="tel" id="telefone" required>
+                
+                    <p class="texto">Documento de identidade</p>
+                    <label class="upload-box" for="documentoIdentidade"><img src="/assets/cloud-upload.png" alt="Clique aqui para selecionar o arquivo">Clique aqui para selecionar o arquivo</label>
+                    <input class="upload" type="file" id="documentoIdentidade" required>
+                
+            
+                <h2 class="subtitulo">Endereço residencial</h2>
+                    
+                    <label class="texto" for="cep">CEP</label>
+                    <input class="resposta" type="text" id="cep" required>
+
+                    <div class="endereco-container">
+                        <div class="endereco">
+                            <label class="texto" for="rua">Rua</label>
+                            <input class="resposta-1" type="text" id="rua" required>
+                        </div>
+                        <div class="endereco">
+                            <label class="texto" for="numero">Número</label>
+                            <input class="resposta-2" type="text" id="numero" required>
+                        </div>
+                    </div>
+                    <div class="endereco-container">
+                        <div class="endereco">
+                            <label class="texto" for="cidade">Cidade</label>
+                            <input class="resposta-1" type="text" id="cidade" required>
+                        </div>
+                        <div class="endereco">
+                            <label class="texto" for="estado">Estado</label>
+                            <input class="resposta-2" type="text" id="estado" required>
+                        </div>
+                    </div>
+
+                    <p class="texto">Comprovante de residência</p>
+                    <label class="upload-box" for="comprovanteResidencia"><img src="/assets/cloud-upload.png" alt="Clique aqui para selecionar o arquivo">Clique aqui para selecionar o arquivo</label>
+                    <input class="upload" type="file" id="comprovanteResidencia" required>
+                
+            
+                <h2 class="subtitulo">Trilhas de apredizagem</h2>
+                
+                    <div class="trilhas-container">
+                        <label class="texto" for="trilhas">Selecione apenas uma trilha</label>
+
+                        <label class="trilhas"><input class="radio" type="radio" name="trilha" value="front-end" required><div class="trilhas-elements"><img src="/assets/front-end.png" alt="Programação Front-end">Programação Front-end</div></label>
+
+                        <label class="trilhas"><input class="radio" type="radio" name="trilha" value="back-end"><div class="trilhas-elements"><img src="/assets/back-end.png" alt="Programação Back-end">Programação Back-end</div></label>
+
+                        <label class="trilhas"><input class="radio" type="radio" name="trilha" value="jogos"><div class="trilhas-elements"><img src="/assets/jogos.png" alt="Programação de Jogos">Programação de Jogos</div></label>
+
+                        <label class="trilhas"><input class="radio" type="radio" name="trilha" value="design"><div class="trilhas-elements"><img src="/assets/ux.png" alt="Design e Experiência">Design e Experiência</div></label>
+
+                        <label class="trilhas"><input class="radio" type="radio" name="trilha" value="dados"><div class="trilhas-elements"><img src="/assets/Frame 48095973.png" alt="Ciência de Dados">Ciência de Dados</div></label>
+                    </div>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="termos" required>
+                    <label class="checkbox">Declaro que li e concordo com os <strong class="strong-checkbox">Termos e Condições</strong> e com a <strong class="strong-checkbox">Política de Privacidade</strong>.</label>
+                </div>
+
+                <div class="button-container">
+                    <button class="button-cancelar" type="reset">Cancelar</button>
+                    <button class="button-inscricao" type="submit">Fazer inscrição</button>
+                </div>
+
+            </form>
+
+        </div>
+        <div class="image-container">
+            <img class="ilustracao" src="./assets/Ilustration.png" alt="Ilustração">
+            <img class="logo-trilhas" src="/assets/Group 2.png" alt="Trilhas Inova Maranhão">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
